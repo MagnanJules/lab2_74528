@@ -82,9 +82,9 @@ fun MovieItem(navController: NavController, movie: Movie) {
                 modifier = Modifier.padding(12.dp),
                 verticalArrangement = Arrangement.Center
             ) {
-                Text(text = movie.name, style = MaterialTheme.typography.bodyLarge.copy(fontWeight = FontWeight.Bold))
-                Text(text = "Seats Remaining: ${movie.seatsRemaining}", style = MaterialTheme.typography.bodyMedium)
-                Text(text = "Seats Selected: ${movie.seatsSelected}", style = MaterialTheme.typography.bodyMedium)
+                Text(text = movie.name, style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold))
+                Text(text = "Seats Remaining: ${movie.seatsRemaining}", style = MaterialTheme.typography.bodyLarge)
+                Text(text = "Seats Selected: ${movie.seatsSelected}", style = MaterialTheme.typography.bodyLarge)
             }
         }
     }
